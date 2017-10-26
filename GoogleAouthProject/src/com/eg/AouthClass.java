@@ -14,13 +14,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 public class AouthClass extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 	String code = req.getParameter("code");
 	String URLParams = "code="+code+
 			"&client_id=440087998284-7m668tavo8bul3q7ki208vhtr5p27sr8.apps.googleusercontent.com"+
 			"&client_secret=cfYWzvcJRcECVlD2W-Fmo7Ak"+
-			"&redirect_uri=http://localhost:8888/googleRedirect"+
+			"&redirect_uri=http://1-dot-login-169308.appspot.com/googleRedirect"+
 			"&grant_type=authorization_code";
 	System.out.println(URLParams);
 	
@@ -59,8 +60,9 @@ public class AouthClass extends HttpServlet {
 
         System.out.println("Username = "+username + "  loginId"+ loginId);
 
-
-		
+        GoogleAouthProjectServlet MailAPI = new GoogleAouthProjectServlet();
+         MailAPI.MailAPI(loginId);
+        
 		
 	} catch (JSONException e) {
 		// TODO Auto-generated catch block
