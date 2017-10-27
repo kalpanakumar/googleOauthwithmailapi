@@ -6,16 +6,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-import java.util.logging.Logger;
-
-
-public class CronTest extends HttpServlet {
-	
-	private static final Logger log = Logger.getLogger(CronTest.class.getName());
+public class TaskQueue1 extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException { 
-		log.info("Hello world ");
-		log.warning("Hello world ");
+		GoogleAouthProjectServlet gA = new GoogleAouthProjectServlet();
+		for(int i=0;i<100; i++){
+			gA.MailAPI("kalpana.krishna@a-cti.com");
+		}
 	}
-
+	
 }

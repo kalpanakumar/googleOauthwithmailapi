@@ -20,6 +20,22 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>CronClassProject</servlet-name>
 		<url-pattern>/CronURL</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>TaskQueueClassProject</servlet-name>
+		<servlet-class>com.eg.TaskQueue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TaskQueueClassProject</servlet-name>
+		<url-pattern>/TaskQueue</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TaskQueue1ClassProject</servlet-name>
+		<servlet-class>com.eg.TaskQueue1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TaskQueue1ClassProject</servlet-name>
+		<url-pattern>/sendemail</url-pattern>
+	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>

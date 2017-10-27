@@ -4,5 +4,5 @@
 		<url>/CronURL</url>
 		<description>Test sdfsf df sdfds sdf s</description>
 		<schedule>every 1 minutes</schedule>
-	</cron>
+	</cron>	
 </cronentries>

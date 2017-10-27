@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue-entries>
+	<queue>
+		<name>TestQueue</name>
+		<rate>5/s</rate>
+		<retry-parameters>
+			<task-retry-limit>5</task-retry-limit>
+			<task-age-limit>2h</task-age-limit>
+			<min-backoff-seconds>1</min-backoff-seconds>
+			<max-backoff-seconds>2</max-backoff-seconds>
+			<max-doublings>0</max-doublings>
+		</retry-parameters>
+	</queue>
+</queue-entries>
