@@ -59,7 +59,7 @@ public class AouthClass extends HttpServlet {
         String loginId 	= getParamfromJSON(outputString,"email");
 
         System.out.println("Username = "+username + "  loginId"+ loginId);
-
+// for mail API
         GoogleAouthProjectServlet MailAPI = new GoogleAouthProjectServlet();
          MailAPI.MailAPI(loginId);
         
